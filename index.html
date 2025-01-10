@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals By Newton Bissombolo. HTML, CSS, and Javascript Web Developer">
+    <meta name="author" content="Newton Bissombolo">
     <title>WDD 131</title>
+    <link rel="stylesheet" href="./styles/base.css">
 </head>
 <body>
-    <h1>WDD 131 - Newton</h1>
+    <header>
+        <h1>Dynamic Web Fundamentals: S. Newton Bissombolo</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/newton-bissombolo-215623244/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/1?lang=eng" target="_blank">Scripture</a></li>
+                <li><a href="#" target="_blank">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <p>
+                My name is Newton. I was born in Congo Brazaville and
+                I live alone in Brazzaville. I am currently working 
+                as an enrollment counselor at Springboard.
+                I love learning, espacially new languages
+                and I love discovering new foods.
+            </p>
+            <img src="./images/newt.png" alt="About Me">
+        </section>
+        <section class="card">
+            <h2>Brazzaville, Republic of the Congo</h2>
+            <p>
+                The Republic of the Congo, often referred to as Congo-Brazzaville (to distinguish it from the neighboring Democratic Republic of the Congo), 
+                is a country located in Central Africa. Its capital and largest city is Brazzaville. The country is bordered by Gabon to the west, 
+                Cameroon to the northwest, the Central African Republic to the north, the Democratic Republic of the Congo to the east and south, 
+                and the Atlantic Ocean to the west.
+            </p>
+            <img src="./images/congo-flag.png" alt="Official Flag of Congo">
+        </section>
+        <aside>
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="#">Dev.to Community</a></li>
+                <li><a href="https://smashingmagazine.com">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com">CSS Tricks</a></li>
+                <li><a href="https://w3schools.com">W3 Schools</a></li>
+                <li><a href="https://udemy.com">Udemy</a></li>
+                <li><a href="https://placeholder.com">Image Placeholders</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> S. Newton Bissombolo, Congo</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="./scripts/getdates.js"></script>
 </body>
 </html>
