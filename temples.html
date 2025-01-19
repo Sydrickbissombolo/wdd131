@@ -3,62 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Picture Album</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals By Newton Bissombolo. HTML, CSS, and Javascript Web Developer">
     <meta name="author" content="Newton Bissombolo">
-    <title>WDD 131</title>
-    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/temples.css">
+    <link rel="stylesheet" href="./styles/temples-large.css">
+    <script src="./scripts/temples.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Dynamic Web Fundamentals: S. Newton Bissombolo</h1>
+        <h1>Temple Album</h1>
+        <button class="hamburger" id="hamburger-btn">&#9776;</button>
         <nav>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/newton-bissombolo-215623244/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/1?lang=eng" target="_blank">Scripture</a></li>
-                <li><a href="#" target="_blank">Final Project</a></li>
+            <ul id="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="card">
-            <h2>About Me</h2>
-            <p>
-                My name is Newton. I was born in Congo Brazaville and
-                I live alone in Brazzaville. I am currently working 
-                as an enrollment counselor at Springboard.
-                I love learning, espacially new languages
-                and I love discovering new foods.
-            </p>
-            <img src="./images/newt.png" alt="About Me">
-        </section>
-        <section class="card">
-            <h2>Brazzaville, Republic of the Congo</h2>
-            <p>
-                The Republic of the Congo, often referred to as Congo-Brazzaville (to distinguish it from the neighboring Democratic Republic of the Congo), 
-                is a country located in Central Africa. Its capital and largest city is Brazzaville. The country is bordered by Gabon to the west, 
-                Cameroon to the northwest, the Central African Republic to the north, the Democratic Republic of the Congo to the east and south, 
-                and the Atlantic Ocean to the west.
-            </p>
-            <img src="./images/congo-flag.png" alt="Official Flag of Congo">
-        </section>
-        <aside>
-            <h2>Web Dev Resources</h2>
-            <ul>
-                <li><a href="#">Dev.to Community</a></li>
-                <li><a href="https://smashingmagazine.com">Smashing Magazine</a></li>
-                <li><a href="https://css-tricks.com">CSS Tricks</a></li>
-                <li><a href="https://w3schools.com">W3 Schools</a></li>
-                <li><a href="https://udemy.com">Udemy</a></li>
-                <li><a href="https://placeholder.com">Image Placeholders</a></li>
-            </ul>
-        </aside>
+        <h2>Home</h2>
+        <div class="container">
+            <figure>
+                <img src="./images/aba_nigeria_temple_lds.webp" alt="Nigeria temple">
+                <figcaption>Nigeria temple</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/accra_ghana_temple_lds.webp" alt="Accra Ghana Temple">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/albuquerque_temple_lds.webp" alt="Albuquerque Temple">
+                <figcaption>Albuquerque Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/asuncion_paraguay_temple_lds.webp" alt="Assuncion Paraguay Temple">
+                <figcaption>Assuncion Paraguay Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/atlanta_temple_lds.webp" alt="Atlanta Temple">
+                <figcaption>Atlanta Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/baton_rouge_temple_lds.webp" alt="Baton Rouge Temple">
+                <figcaption>Baton Rouge Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/bern_switzerland_temple_lds.webp" alt="Bern Switzerland Temple">
+                <figcaption>Bern Switzerland Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/billings_temple_lds.webp" alt="Billings Temple">
+                <figcaption>Billings Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/birmingham_alabama_temple_lds.webp" alt="Birmingham Alabama Temple">
+                <figcaption>Birmingham Alabama Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/bountiful_temple_lds.webp" alt="Bountiful Temple">
+                <figcaption>Bountiful Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/brigham_city_utah_temple_dawn.webp" alt="Brigham City Utah Temple">
+                <figcaption>Brigham City Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/rendering_arequipa_peru_temple.webp" alt="Arequipa Peru Temple">
+                <figcaption>Arequipa Peru Temple</figcaption>
+            </figure>
+        </div>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> S. Newton Bissombolo, Congo</p>
-        <p id="lastModified"></p>
+        <p>&copy; <span id="current-year"></span> | Last modified: <span id="last-modified"></span> By Newton Bissombolo</p>
     </footer>
-
-    <script src="./scripts/getdates.js"></script>
+    
 </body>
 </html>
